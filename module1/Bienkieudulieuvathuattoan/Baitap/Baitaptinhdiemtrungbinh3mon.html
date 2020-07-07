@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Vật Lý</label>
+<input  type="text" id="vatLy"><br>
+<label>Hóa Học</label>
+<input type="Hóa Học" id="hoaHoc"><br>
+<label>Sinh Học</label>
+<input type="text" id="sinhHoc"><br>
+<input type="button" value="Addition" onclick="cong()">
+<p id="hienThi"></p>
+<script>
+    function cong(){
+        let vat_ly = document.getElementById("vatLy").value;
+        let hoa_hoc= document.getElementById("hoaHoc").value;
+        let sinh_hoc =document.getElementById("sinhHoc").value;
+        ket_qua=(parseInt(vat_ly)+parseInt(hoa_hoc)+parseInt(sinh_hoc))/3;
+        document.getElementById("hienThi").innerText="diemTrungbinh="+ket_qua ;
+    }
+
+</script>
+</body>
+</html>
