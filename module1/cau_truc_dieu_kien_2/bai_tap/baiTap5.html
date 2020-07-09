@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Diem Kiem Tra</label>
+<input  type="text" id="kiemTra"><br>
+<label>Diem Thi</label>
+<input type="Hóa Học" id="diemThi"><br>
+<label>Diem Cuoi Ky</label>
+<input type="text" id="cuoiKy"><br>
+<input type="button" value="Addition" onclick="cong()">
+<p id="hienThi"></p>
+<script>
+    function cong(){
+        let kiemTra = document.getElementById("kiemTra").value;
+        let diemThi= document.getElementById("diemThi").value;
+        let diemCuoiKy =document.getElementById("cuoiKy").value;
+        cuoiKy=diemCuoiKy*2
+        ket_qua=(parseInt(kiemTra)+parseInt(diemThi)+parseInt(cuoiKy))/4;
+        document.getElementById("hienThi").innerText="diemTrungbinh="+ket_qua ;
+    }
+</script>
+</body>
+</html>

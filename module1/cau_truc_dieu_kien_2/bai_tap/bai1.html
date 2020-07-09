@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Khai báo biến : */
+     let numberA;
+     let numberB;
+     /*Nhập từ bàn phím: */
+     numberA = prompt("Nhập giá trị A: ");
+     numberB = prompt("Nhập giá trị B: ");
+     /*chuyển kiểu: */
+    numberA =parseInt(numberA);
+    numberB =parseInt(numberB);
+     /*Thuật toán: */
+    let ketqQua = numberA%numberB == 0;
+      if(ketqQua)
+      {
+         /* Hiển thị lên: */
+          alert(numberA +" chia hết cho "+ numberB);
+      }else {
+          alert(numberA +" không chia hết cho "+ numberB);
+      }
+
+</script>
+</body>
+</html>

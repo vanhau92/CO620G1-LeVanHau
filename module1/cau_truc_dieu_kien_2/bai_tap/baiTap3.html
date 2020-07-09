@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inter" >
+<input type="button" value="KíchVao" onclick="number()">
+<br>
+<br>
+<p id="inter2"></p>
+<script>
+    function number(){
+        let inter=document.getElementById("inter").value;
+        if(inter>1) {
+            document.getElementById("inter2").innerText= "lớn Hơn 0";
+        } else {
+            document.getElementById("inter2").innerText= "Nhỏ Hơn 0";
+            {
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
+let number1;
+let number2;
+let number3;
+
+number1 = prompt("Nhấp Số A");
+number2 = prompt("Nhập Sô B");
+number3 = prompt("Nhập Sô C");
+
+number1 = parseInt(number1);
+number2 = parseInt(number2);
+number3 = parseInt(number3);
+if (number1 > number2)
+if (number1 > number3)
+alert(number1 + "Giá Trị Lớn Nhất A");
+else
+alert(number3 + "giá trị lớn Nhất C");
+else if (number2 > number3)
+
+alert(number2 + " Giá Trị Lớn Nhất La B");
+else
+alert(number3 + "giá trị lớn Nhất C");

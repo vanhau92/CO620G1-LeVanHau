@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="inter" type="text" style="margin-left: 20px;margin-top:10px;">
+<input type="button" value="Nhấn" onclick="number()">
+<br>
+<br>
+<p id="result"></p>
+<script>
+    function number() {
+        let inter=document.getElementById("inter").value;
+        inter = parseInt(inter);
+        if (inter >= 16) {
+
+            document.getElementById("result").innerText="Được Học Lớp 10";
+        } else {
+            document.getElementById("result").innerText="Không được Học Lớp 10";
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fullName="Lâm Thanh Phong";
+    let idCard="123456789";
+    let dateOfBirth="03/20/2003";
+    let email="abc@codegym.com";
+    let address="Đà Lạt";
+    let customer="Diamond";
+    let disCountPhanTram="50";
+    let quantityIncluded="500";
+    let rentDays="10";
+    let typeOfService="Villa";
+    let kindOfRoom="Vip";
+    if (typeOfService==="Villa"){
+        monNey=500;
+    }else if (typeOfService==="House"){
+        monNey=300;
+    }else {
+        monNey=100;
+    }
+    let totalDiscount;
+    let totalPay;
+    menu();
+    function menu1() {
+        let choose=prompt("Nhập thao tác muốn thực hiện:\n1.show\n2.edit");
+        switch (choose) {
+            case "1":
+                show();
+                break;
+            case "2":
+                edit();
+                break;
+            default:
+                alert("Failed");
+                break;
+        }
+        menu();
+    }
+    function show() {
+        let currentYear = new Date().getFullYear();
+        let birthday = new Date(dateOfBirth).getFullYear();
+        let ageCustomer = currentYear - birthday;
+        let discountOfRentDays;
+        if (rentDays>=7)
+            discountOfRentDays=30;
+​
+            totalPay=(parseInt(monNey)*parseInt(rentDays)*(1-(parseInt(disCountPhanTram)/100)) - totalDiscount)+"$";
+        alert("1.Tên khách hàng: "+fullName+"" +
+            "\n"+"2.Số CMND: "+idCard+"" +
+            "\n"+"3.Ngày sinh: "+dateOfBirth+"" +
+            "\n"+"4.Email: "+email+ "" +
+            "\n"+ "5.Địa chỉ: "+address+"" +
+            "\n"+ "6.Loại Customer: "+customer+"" +
+            "\n"+"7.Phần trăm giảm giá: "+disCountPhanTram+"%"+
+            "\n"+"8.Số lượng đi kèm: "+quantityIncluded+"" +
+            "\n"+ "9.Số ngày thuê: "+rentDays+"" +
+            "\n"+"10.Loại dịch vụ: "+typeOfService+"" +
+            "\n"+ "11.Loại phòng: "+kindOfRoom+"" +
+            "\n"+"12.Số tiền phải trả là: "+totalPay+"");
+        menu();
+    }
+    function edit() {
+        let choose=prompt("1.Tên khách hàng: "+fullName+"" +
+            "\n"+"2.Số CMND: "+idCard+"" +
+            "\n"+"3.Ngày sinh: "+dateOfBirth+"" +
+            "\n"+"4.Email: "+email+ "" +
+            "\n"+ "5.Địa chỉ: "+address+"" +
+            "\n"+ "6.Loại Customer: "+customer+"" +
+            "\n"+"7.Phần trăm giảm giá: "+disCountPhanTram+"%"+
+            "\n"+"8.Số lượng đi kèm: "+quantityIncluded+"" +
+            "\n"+ "9.Số ngày thuê: "+rentDays+"" +
+            "\n"+"10.Loại dịch vụ: "+typeOfService+"" +
+            "\n"+ "11.Loại phòng: "+kindOfRoom+"");
+        switch (choose){
+            case "1":
+                fullName=prompt("Nhập lại tên:");
+                break;
+            case "2":
+                idCard=prompt("Nhập lại CMND:");
+                break;
+            case "3":
+                dateOfBirth=prompt("Nhập lại ngày sinh:\nTheo định dạng : tháng/ngày/năm");
+                break;
+            case "4":
+                email=prompt("Nhập lại Email:");
+                break;
+            case "5":
+                address=prompt("Nhập lại địa chỉ:");
+                break;
+            case "6":
+                customer=prompt("Nhập lại loại Customer:\nDiamond, Platinum, Gold, Silver, Member");
+                break;
+            case "7":
+                disCountPhanTram=prompt("Nhập lại phần trăm giảm giá:\nGiá trị từ 1- 100");
+                break;
+            case "8":
+                quantityIncluded=prompt("Nhập lại số lượng đi kèm:");
+                break;
+            case "9":
+                rentDays=prompt("Nhập lại số ngày thuê:");
+                break;
+            case "10":
+                typeOfService=prompt("Nhập lại loại dịch vụ:\nVilla: 500$/1 ngày\nHouse: 300$/1 ngày\nRoom: 100$/1 ngày");
+                break;
+            case "11":
+                kindOfRoom=prompt("Nhập lại loại phòng:\nVip, Business,  Normal");
+                break;
+            default:
+                alert("Failed");
+                break;
+        }
+        show()
+    }
+</script>
+
+
+
+</body>
+</html>

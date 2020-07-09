@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2</title>
+</head>
+<body>
+<script>
+    let name="Hậu";
+    let number="212599759";
+    let birthday="23/23/1223";
+    let Email="sdas@.abc";
+    let address="Quảng Ngãi";
+    let species="Villa";
+    let diScount="Víp";
+    let quantity =10;
+    let rentedays =10;
+    let service =10;
+    let room =7;
+
+    let  choose=parseInt(prompt("1 .Hiển thị thông tin khách hàng."+"\n"+
+            "2 .Chỉnh sữa thông tin khách hàng."+"\n"+
+            "3. Hiển thị giá sau khi được giảm giá."));
+
+    switch  (choose) {
+
+        case 1:
+            alert(" Ho Tên: "+ name+
+                "\n"+ "Số CMND:"+ number+
+                "\n" +"Ngày Tháng Năm Sinh:"+ birthday+"" +
+                "\n"+ "Email :" +Email+"" +
+                "\n" + "Địa Chỉ :"+address+" "+
+                "\n" + "Nhập Loại Customer:"+species+"" +
+                "\n "+" Giảm Giá :"+ diScount +""+
+                "\n " +"Số Lượng Người Đi :"+ quantity+"" +
+                "\n "+" Số Ngày Thuê :"+ rentedays+"" +
+                "\n "+" Chọn Loại Dịch Vụ :"+ service+"" +
+                "\n "+" Loại Phòng Thuê :"+room );
+                break;
+        }
+    let chooseEdit;
+    switch (choose){
+      case 2: {
+          chooseEdit = parseInt(prompt("1. Ho Tên: " + name +
+              "\n" + " 2. Số CMND:" + number +
+              "\n" + " 3. Ngày Tháng Năm Sinh:" + birthday + "" +
+              "\n" + " 4.Email :" + Email + "" +
+              "\n" + " 5. Địa Chỉ :" + "address" +
+              "\n" + " 6. Nhập Loại Customer:" + species + "" +
+              "\n" + " 7. Giảm Giá :" + diScount + "" +
+              "\n" + " 8. Số Lượng Người Đi :" + quantity + "" +
+              "\n" + " 9. Số Ngày Thuê :" + rentedays + "" +
+              "\n" + " 10. Chọn Loại Dịch Vụ :" + service + "" +
+              "\n" + " 11. Loại Phòng Thuê :" + room));
+      }
+    }
+        switch (chooseEdit) {
+            case 1: {
+                name = prompt("inter name:");
+                break;
+            }
+            case 2 : {
+                number = prompt("intet number:");
+                break;
+            }
+            case 3:{
+                birthday= prompt(" inter birthday:");
+                break;
+            }
+            case 4:{
+                Email=prompt("Email:");
+                break;
+            }
+            case 5:{
+                address=prompt("inter address:");
+                break;
+            }
+            case 6:{
+                species=prompt("inter species :");
+                break;
+            }
+            case 7: {
+                diScount = prompt(" inter diScount:");
+                break;
+            }
+            case 8: {
+                rentedays= prompt(" inter rentedays :");
+                break;
+            }
+            case 9:{
+                rentedays=prompt(" inter rentedays :");
+                break;
+            }
+            case 10:{
+                service=prompt("inter service :");
+                break;
+            }
+            case 11:{
+                room=prompt(" inter room :");
+                break
+            }
+            default:
+                alert("Failed");
+                break;
+        }
+
+</script>
+</body>
+</html

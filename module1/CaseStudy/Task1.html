@@ -12,92 +12,44 @@
     let Email=prompt("Email");
     let address=prompt("Địa Chỉ");
     let species=prompt("Nhập Loại Customer  ");
-    let discount=prompt("Giảm Giá");
+    let diScount=prompt("Giảm Giá");
     let quantity =prompt("Số Lượng Người Đi");
-    let rentedays =prompt("Số Phòng (Villa, House, Room)");
-    let service =prompt("Số Ngày Ở Lại");
-    let room =prompt("Giảm Giá ");
+    let rentedays =prompt("Số Ngày Thuê");
+    let service =prompt("Chọn Loại Dịch Vụ");
+    let room =prompt("Loại Phòng Thuê ");
 
-
-            money=(300*rentDay*(1-discount/100));
-          money=(100*renteday*(1-discount/100));
-    alert("Ho Tên\nSố CMND\nbirthday\nEmail\ndiscount\nquantityincluded\nnumberofdaysrented\nservice\nroom");
-
-
-
-
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <title>task-1</title>
-        </head>
-        <body>
-        <script>
-        /*Khai báo biến: */
-        let nameKhachHang;
-    let soCmnd;
-    let ngayThangNam;
-    let emailKh;
-    let diaChi;
-    let loaiCustomer;
-    let giamGia;
-    let soLuongDiKem;
-    let soNgayThue;
-    let loaiDichVu;
-    let loaiPhongThue;
-    /*nhập vào: */
-    nameKhachHang = prompt(" Nhập tên: ");
-    soCmnd= prompt(" Nhập số CMND: ");
-    ngayThangNam  = prompt("Ngày Tháng năm sinh: ");
-    emailKh = prompt(" Nhập Email: ");
-    diaChi = prompt(" Nhập địa chỉ: ");
-    loaiCustomer = prompt(" Nhập loại customer: ");
-    giamGia = prompt(" Giảm giá: ");
-    soLuongDiKem = prompt(" Nhập số lượng đi kèm: ");
-    soNgayThue = prompt(" Nhập số ngày thuê: ");
-    loaiDichVu = prompt("Mời bạn chọn loại dịch vụ: "+"\n"
-        +"1. Villa 500$/ngày"+"\n"
-        +"2. House 300$/ngày"+"\n"
-        +"3. Room, 100$/ngày");
-    loaiPhongThue = prompt("Loại phòng thuê : ");
-    /*Chuyển loại dịch vụ về số nguyên: */
-    loaiDichVu = parseInt(loaiDichVu);
-    soNgayThue = parseInt(soNgayThue);
-    giamGia = parseInt(giamGia);
-    switch (loaiDichVu) {
+    dichVu=parseInt("dichVu");
+    ngayThue=parseInt("ngayThue");
+    diScount=parseInt("diScount")
+    switch (dichVu) {
         case 1:
-            loaiDichVu = 500;
-            break;
+            dichVu=500;
+        break;
         case 2:
-            loaiDichVu = 300;
+            dichVu=300;
             break;
-        case 3:
-            loaiDichVu = 100;
+            case 3:
+            dichVu=100;
             break;
-        default:
-            alert("Nhâp lại: ");
-            break;
+
     }
-    /*In ra: */
-    alert("Tên: "+nameKhachHang+"\n"+
-        "CMND: "+soCmnd+"\n"+
-        "Ngày Tháng năm sinh: "+ngayThangNam+"\n"+
-        "email: "+emailKh+"\n"+
-        "Địa chỉ: "+diaChi+"\n"+
-        "loại khách hàng: "+loaiCustomer+"\n"+
-        "giảm giá: "+giamGia+"\n"+
-        "số lượng đi kèm: "+giamGia+"\n"+
-        "số ngày thuê : "+soNgayThue+"\n"+
-        "loại dịch vụ: "+loaiDichVu+"\n"+
-        "loại phòng thuê: "+loaiPhongThue+"\n"
-    );
-    let soTienTra = 0;
-    soTienTra = loaiDichVu*soNgayThue*(1-giamGia/100);
-    alert("Số tiền phải trả: "+soTienTra +"$");
-</script>
-</body>
-</html>
+
+
+    alert("1. Ho Tên: "+ name+
+        "\n 2. Số CMND:"+ number
+        +"\n 3. Ngày Tháng Năm Sinh:"+ birthday+"" +
+    "\n 4.Email :" +Email+"" +
+    "\n 5 Địa Chỉ :"+"Địa Chỉ" +
+    "\n 6 Nhập Loại Customer:"+species+"" +
+    "\n 7 Giảm Giá :"+ diScount +""+
+    "\n 8 Số Lượng Người Đi :"+ quantity+"" +
+    "\n 9 Số Ngày Thuê :"+ rentedays+"" +
+    "\n 10 Chọn Loại Dịch Vụ :"+ service+"" +
+    "\n 11 Loại Phòng Thuê :"+room )
+    soTienTra=0;
+    soTienTra=dichVu*ngayThue*(1-diScount/10);
+    alert("Số Tiền Phải Trả"+soTienTra+"$")
+
 </script>
 
 </body>

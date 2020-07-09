@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inter1" >
+<input type="text" id="inter2" >
+<input type="text" id="inter3" >
+<input type="button" value="Kích Vào" onclick="number()">
+<br>
+<br>
+<p id="inter4"></p>
+<script>
+    function number() {
+
+
+        let inter1 = document.getElementById("inter1").value;
+        let inter2 = document.getElementById("inter2").value;
+        let inter3 = document.getElementById("inter3").value;
+        let number1 = parseInt(number1);
+        let number2 = parseInt(number2);
+        let number3 = parseInt(number3);
+        if (number1 > number2)
+            if (number1 > number3)
+               document.getElementById("inter4").innerText= "giá trị lớn Nhất A";
+            else
+                document.getElementById("inter4").innerText= "giá trị lớn Nhất C";
+        else if (number2 > number3)
+
+            document.getElementById("inter4").innerText= "giá trị lớn Nhất B";
+        else
+            document.getElementById("inter4").innerText= "giá trị lớn Nhất C";
+
+    }
+
+
+</script>
+</body>
+</html>
