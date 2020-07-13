@@ -16,22 +16,20 @@
     function number() {
 
 
-        let inter1 = document.getElementById("inter1").value;
-        let inter2 = document.getElementById("inter2").value;
-        let inter3 = document.getElementById("inter3").value;
-        let number1 = parseInt(number1);
-        let number2 = parseInt(number2);
-        let number3 = parseInt(number3);
+        let number1 = document.getElementById("inter1").value;
+        let number2= document.getElementById("inter2").value;
+        let number3= document.getElementById("inter3").value;
+
         if (number1 > number2)
             if (number1 > number3)
-               document.getElementById("inter4").innerText= "giá trị lớn Nhất A";
+               document.getElementById("inter4").innerHTML= "giá trị lớn Nhất A";
             else
-                document.getElementById("inter4").innerText= "giá trị lớn Nhất C";
+                document.getElementById("inter4").innerHTML= "giá trị lớn Nhất C";
         else if (number2 > number3)
 
-            document.getElementById("inter4").innerText= "giá trị lớn Nhất B";
+            document.getElementById("inter4").innerHTML= "giá trị lớn Nhất B";
         else
-            document.getElementById("inter4").innerText= "giá trị lớn Nhất C";
+            document.getElementById("inter4").innerHTML= "giá trị lớn Nhất C";
 
     }
 

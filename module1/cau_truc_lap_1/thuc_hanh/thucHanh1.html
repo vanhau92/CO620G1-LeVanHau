@@ -5,26 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    var year=parseInt(prompt("inter a year"));
+    <h2>JavaScript Loops</h2>
+    <p id="demo"></p>
+    <script>
 
-    var isLeapYear = false;
-     var isDivisibleBy4= year % 4==0;
-    if (year % 4 == 0) {
-        if (year % 100 == 0) {
-            if (year % 400 == 0) {
-                alert(year + " is a leap year");
-            } else {
-                alert(year + " is NOT a leap year");
-            }
-        } else {
-            alert(year + " is a leap year");
-        }
-    } else {
-        alert(year + " is NOT a leap year");
+        let text = "";
+        let i;
+        for (i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
     }
-
-
+    document.getElementById("demo").innerHTML = text;
 </script>
 </body>
 </html>

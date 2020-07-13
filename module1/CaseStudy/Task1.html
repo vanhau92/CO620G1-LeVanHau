@@ -6,51 +6,67 @@
 </head>
 <body>
 <script>
-    let name=prompt("Ho Tên");
-    let number=prompt("Số CMND");
-    let birthday=prompt("Ngày Tháng Năm Sinh");
-    let Email=prompt("Email");
-    let address=prompt("Địa Chỉ");
-    let species=prompt("Nhập Loại Customer  ");
-    let diScount=prompt("Giảm Giá");
-    let quantity =prompt("Số Lượng Người Đi");
-    let rentedays =prompt("Số Ngày Thuê");
-    let service =prompt("Chọn Loại Dịch Vụ");
-    let room =prompt("Loại Phòng Thuê ");
-
-    dichVu=parseInt("dichVu");
-    ngayThue=parseInt("ngayThue");
-    diScount=parseInt("diScount")
-    switch (dichVu) {
-        case 1:
-            dichVu=500;
-        break;
-        case 2:
-            dichVu=300;
-            break;
-            case 3:
-            dichVu=100;
-            break;
-
-    }
+    let  name=prompt("Inut name:");
+    let  cmnd=prompt("Inut cmnd:");
+    let birthday=prompt("Inut birthday");
+    let Email=prompt("Inut mail");
+    let address=prompt("Input address");
+    let typeService=prompt(" Input  typeService");
+    let typeRoom=prompt("Input  typeRoom");
+    let tybeCustomer=prompt(" Input  tybeCustomer");
+    let discount=prompt(" Input discount");
+    let quantityIncluded =prompt("Input  quantityIncluded");
+    let  rendDays=prompt("Input  rendDays");
+    totalPay=300*rendDays*(1-discount/100);
 
 
-    alert("1. Ho Tên: "+ name+
-        "\n 2. Số CMND:"+ number
-        +"\n 3. Ngày Tháng Năm Sinh:"+ birthday+"" +
-    "\n 4.Email :" +Email+"" +
-    "\n 5 Địa Chỉ :"+"Địa Chỉ" +
-    "\n 6 Nhập Loại Customer:"+species+"" +
-    "\n 7 Giảm Giá :"+ diScount +""+
-    "\n 8 Số Lượng Người Đi :"+ quantity+"" +
-    "\n 9 Số Ngày Thuê :"+ rentedays+"" +
-    "\n 10 Chọn Loại Dịch Vụ :"+ service+"" +
-    "\n 11 Loại Phòng Thuê :"+room )
-    soTienTra=0;
-    soTienTra=dichVu*ngayThue*(1-diScount/10);
-    alert("Số Tiền Phải Trả"+soTienTra+"$")
+
+    alert(" 1.name: "+ name +
+        "\n 2.cmnd:"+ cmnd +
+        "\n 3.birthday:"+ birthday+
+        "\n 4.Email :" +Email+
+        "\n 5. address :"+address+
+        "\n 6. typeService:"+ typeService+
+        "\n 7. typeRoomp :"+ typeRoom +
+        "\n 8. tybeCustomer :"+tybeCustomer+
+        "\n 9. discount :"+ discount+
+        "\n10. quantityIncluded :"+ quantityIncluded+
+        "\n11. rendDays :"+rendDays +"totalpay"+totalPay);
 
 </script>
 
 </body>
 </html>
+case 2:{
+let chooseEidt=parseInt(prompt(" 1.name: "+ name +
+"\n 2.cmnd:"+ cmnd +
+"\n 3.birthday:"+ birthday+
+"\n 4.Email :" +Email+
+"\n 5. address :"+address+
+"\n 6. typeService:"+ typeService+
+"\n 7. typeRoomp :"+ typeRoom +
+"\n 8. tybeCustomer :"+tybeCustomer+
+"\n 9. discount :"+ discount+
+"\n10. quantityIncluded :"+ quantityIncluded+
+"\n11. rendDays :"+rendDays +"totalpay"+totalPay);
+break;
+}
+case 3: {
+let money = 0;
+if (typeService === "Villa") {
+money = 500;
+} else if (typeService === "house") {
+money = 300;
+} else if (typeService === "Room") {
+money = 100;
+}
+let temp = 0;
+if (address === "Da nang") {
+temp += 20;
+}
+if (address === "Hue") {
+temp += 10;
+}
+if (address === "QuangNam") {
+temp += 5;
+}
