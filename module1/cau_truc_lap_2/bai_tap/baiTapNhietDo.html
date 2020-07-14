@@ -6,16 +6,19 @@
 </head>
 <body>
 <script>
-    let nhietDo=parseInt(prompt("nhap thong tin"));
-    while (true) {
-    if (nhietDo<=20){
-        alert("yêu cầu tăng nhiệt độ")
-    }else if (nhietDo>100){
-        alert("yêu cau giam nhiet do")
-    }else {
-        alert("giữ nguyên")
-    }
-    }
+    let checker=true;
+    do {
+        let nhietDo=parseInt(prompt("nhap thong tin"));
+        if (nhietDo<=20){
+            alert("yêu cầu tăng nhiệt độ")
+        }else if (nhietDo>100){
+            alert("yêu cau giam nhiet do")
+        }else {
+            alert("giữ nguyên thoatt ct")
+            checker=false
+
+        }
+    } while (checker)
 
 </script>
 </body>

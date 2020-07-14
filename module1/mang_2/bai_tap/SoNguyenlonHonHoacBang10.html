@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let number = [10, 30, 31, 5, 7, 6, 12, 34, 56, 45, 9];
+    let index = 0;
+    let tong = 0;
+    let trungBinh = 0;
+    for (let i = 1; i < number.length; i += 2) {
+        if (number[i] % 2 !== 0) {
+            tong += number[i];
+            index++;
+            document.write("số lẻ " + number[i] + "<br>");
+        }
+    }
+    trungBinh = tong / index;
+
+    document.write("trung binh"+trungBinh);
+
+</script>
+</body>
+</html>
+

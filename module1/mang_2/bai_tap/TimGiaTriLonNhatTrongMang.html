@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=[10,30,32,5,8,6,12,34,56,45,];
+    let max=number[0];
+    let min=number[0];
+    let index=0;
+    for (i=0;i<number.length;i++) {
+        if (number[i] > max){
+        max = number[i];
+        index1=i;
+    }
+        if(number[i]<min) {
+            min = number[i];
+            index=i
+        }
+    }
+    document.write("số lơn nhất " +max  +"  vị trị số "+index1+"<br>");
+    document.write("số nhỏ nhất " + min +"  vi tri số  " + index );
+
+</script>
+</body>
+</html>

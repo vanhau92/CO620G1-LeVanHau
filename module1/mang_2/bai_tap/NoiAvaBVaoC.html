@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let number=parseInt(prompt("Nhập Số Mảng A"));
+let number1=parseInt(prompt("Nhập Số Mảng B"));
+let array=new Array(number);
+let array1=new Array(number1);
+let array2=[];
+for(let i=0;i<array.length;i++) {
+    array[i] = parseInt(prompt("Nhập Số phần tử" + i));
+    array1[i]=parseInt(prompt("Nhập Số phần tử" + i));
+    }
+array2=array.concat(array1);
+document.write(" C "+array2)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("Nhap So Phan tu cần khai báo"));
+    let array=new Array(number);
+    let index;
+    for (let i=0;i<array.length;i++){
+        array[i]=parseInt(prompt("Nhập Số phần tử"+i))
+    }
+
+  document.write(array+"<br>");
+
+    let num=parseInt(prompt("Nhập 1 Số :"));
+    for (let i=0;i<array.length;i++){
+        if(array[i]===num) {
+            index=i;
+            document.write("Số Có Trong Mảng " + array[i] + "<br>"+"ví Trí "+ index);
+            break;
+        }
+        }
+
+</script>
+</body>
+</html>

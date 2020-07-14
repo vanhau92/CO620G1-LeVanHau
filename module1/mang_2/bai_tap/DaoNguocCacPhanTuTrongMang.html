@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhập số lượng của mảng:"));
+    let array = new Array(num);
+    let daoNguoc=0;
+    for (let i = 0; i< array.length; i++) {
+        array[i] = parseInt(prompt("Phần Tử Thứ " + i));
+    }
+    document.write("hien thi so nhập" + array+"<br>");
+    daoNguoc=array.reverse();
+    document.write("hiện thị đảo"+ daoNguoc)
+
+</script>
+</body>
+</html>

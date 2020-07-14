@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("nhập số lượng của mảng"));
+    let array=new Array(number);
+    for(let i=0;i<array.length;i++) {
+        array[i] = parseInt(prompt("nhập phần tử" + i));
+
+        if(array[i]<0){
+            document.write(" số âm "+array[i]+"<br>");
+        }else {
+            document.write(" số dương " +array[i] +"<br>")
+        }
+    }
+
+
+</script>
+</body>
+</html>

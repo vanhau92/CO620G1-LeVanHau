@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+      /*khởi tạo và khai báo:*/
+      let  array=[1,'b',0,'f',6,7,'c'];
+      /*biến đếm kí tư số:*/
+        let count =0;
+        //duyệt mảng i = 0 dến array.length -1
+      for (let i=0;i<array.length;i++){
+          /*xác đỉnh kiểu:*/
+          if(!isNaN(array[i])){
+              /*đếm ký tự số thỏa mãn đk trên:*/
+              count++;
+          }
+      }
+      /*in ra thôi:*/
+     alert("Array =["+array+"]");
+      alert("ky tu so la: "+count);
+
+
+</script>
+</body>
+</html>
