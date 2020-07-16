@@ -36,8 +36,8 @@
                  "\n 7. loai phong :" + typeRoom +
                  "\n 8. loai khach hang :" + tybeCustomer +
                  "\n 9. giam gia :" + discount +
-                 "\n10. so luong di kem :" + quantityIncluded +
-                 "\n11. so luong ngay :" + rendDays);
+                 "\n 10. so luong di kem :" + quantityIncluded +
+                 "\n 11. so luong ngay :" + rendDays);
              break;
          }
          case 2: {
@@ -52,88 +52,140 @@
                  "\n 9. discount :" + discount +
                  "\n10. quantityIncluded :" + quantityIncluded +
                  "\n11. rendDays :" + rendDays));
-             break;
-         }
+
              switch (chooseEidt) {
-                 case "1": {
-                     name = prompt("enter name: ");
+                 case 1: {
+                     name = prompt("Enter name :  ");
                      break;
                  }
-                 case "2": {
+                 case 2: {
                      cmnd = prompt("enter cmnd: ");
                      break;
                  }
-                 case "3" : {
+                 case 3 : {
                      birthday = prompt("enter birthday : ");
                      break;
                  }
-                 case "4" : {
+                 case 4 : {
                      Email = prompt("enter Email: ");
                      break;
                  }
-                 case "5": {
+                 case 5: {
                      address = prompt("enter address: ");
                      break;
                  }
-                 case  "6": {
+                 case  6: {
                      typeService = prompt("enter typeService: ");
                      break;
                  }
-                 case "7" : {
+                 case 7 : {
                      typeRoom = prompt("enter typeRoom: ");
                      break;
                  }
-                 case "8": {
+                 case 8: {
                      tybeCustomer = prompt("enter tybeCustomer: ");
                      break;
                  }
-                 case "9" : {
+                 case 9 : {
                      discount = prompt("enter discount: ");
                      break;
                  }
-                 case "10" : {
+                 case 10 : {
                      quantityIncluded = prompt("enter quantityIncluded: ");
                      break;
                  }
-                 case "11"  : {
+                 case 11 : {
                      rendDays = prompt("enter rendDays: ");
                      break;
                  }
              }
-             alert(" 1.Ten: " + name +
-                 "\n 2.cmnd:" + cmnd +
-                 "\n 3.Ngay Sinh:" + birthday +
-                 "\n 4.Email :" + Email +
-                 "\n 5. Dia chi :" + address +
-                 "\n 6. loai dich vu:" + typeService +
-                 "\n 7. loai phong :" + typeRoom +
-                 "\n 8. loai khach hang :" + tybeCustomer +
-                 "\n 9. giam gia :" + discount +
-                 "\n10. so luong di kem :" + quantityIncluded +
-                 "\n11. so luong ngay :" + rendDays);
-             break;
-     }
-    case 3: {
-        let money = 0;
-        if (typeService === "Villa") {
-            money = 500;
-        } else if (typeService === "house") {
-            money = 300;
-        } else if (typeService === "Room") {
-            money = 100;
-        }
-        let temp = 0;
-        if (address === "Da nang") {
-            temp += 20;
-        }
-        if (address === "Hue") {
-            temp += 10;
-        }
-        if (address === "QuangNam") {
-            temp += 5;
-        }
-     }
+             alert(" .Ten: " + name +
+                 "\n .cmnd:" + cmnd +
+                 "\n .Ngay Sinh:" + birthday +
+                 "\n .Email :" + Email +
+                 "\n . Dia chi :" + address +
+                 "\n . loai dich vu:" + typeService +
+                 "\n . loai phong :" + typeRoom +
+                 "\n . loai khach hang :" + tybeCustomer +
+                 "\n . giam gia :" + discount +
+                 "\n. so luong di kem :" + quantityIncluded +
+                 "\n. so luong ngay :" + rendDays);
 
+             break;
+         }
+         case 3: {
+             let money = 0;
+             if (typeService === "Villa") {
+                 money = 500;
+             } else if (typeService === "house") {
+                 money = 300;
+             } else if (typeService === "Room") {
+                 money = 100;
+             }
+             let temp = 0;
+             if (address === "Da nang") {
+                 temp += 20;
+             }
+             if (address === "Hue") {
+                 temp += 10;
+             }
+             if (address === "QuangNam") {
+                 temp += 5;
+             }
+             if(rendDays>7){
+                 temp+=30;
+             }else if(rendDays>5){
+                 temp+=20
+             }else if(rendDays>2){
+                 temp+=10
+             }alert("total pay: "+(money+rendDays+temp));
+            break
+         }
+     }
 </script>
 </body>
 </html>
+
+break;
+}
+switch (chooseEidt) {
+case "1": {
+name = prompt("enter name: ");
+break;
+}
+
+}
+}
+alert(" 1.Ten: " + name +
+"\n 2.cmnd:" + cmnd +
+"\n 3.Ngay Sinh:" + birthday +
+"\n 4.Email :" + Email +
+"\n 5. Dia chi :" + address +
+"\n 6. loai dich vu:" + typeService +
+"\n 7. loai phong :" + typeRoom +
+"\n 8. loai khach hang :" + tybeCustomer +
+"\n 9. giam gia :" + discount +
+"\n10. so luong di kem :" + quantityIncluded +
+"\n11. so luong ngay :" + rendDays);
+break;
+}
+case 3: {
+let money = 0;
+if (typeService === "Villa") {
+money = 500;
+} else if (typeService === "house") {
+money = 300;
+} else if (typeService === "Room") {
+money = 100;
+}
+let temp = 0;
+if (address === "Da nang") {
+temp += 20;
+}
+if (address === "Hue") {
+temp += 10;
+}
+if (address === "QuangNam") {
+temp += 5;
+}
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("nhap so"));
+    let array=new Array(number);
+    let check=0;
+    for (let i=0;i<array.length;i++)
+        array[i]=parseInt(prompt("so phan tu"+i))
+    document.write("mang cu "+array+"<br>")
+    function daoNguoc(){
+         check=array.reverse(array);
+
+    document.write("mang moi "+check)
+    }
+    daoNguoc();
+</script>
+</body>
+</html>
